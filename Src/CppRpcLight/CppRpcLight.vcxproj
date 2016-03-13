@@ -79,10 +79,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="aliases.h" />
-    <ClInclude Include="RpcNetworkProcessor.h" />
+    <ClInclude Include="ClientConnection.h" />
+    <ClInclude Include="RpcServer.h" />
+    <ClInclude Include="ServerConnection.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RpcNetworkProcessor.cpp" />
+    <ClCompile Include="ClientConnection.cpp" />
+    <ClCompile Include="RpcServer.cpp" />
+    <ClCompile Include="ServerConnection.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

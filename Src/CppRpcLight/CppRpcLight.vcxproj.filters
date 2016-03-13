@@ -7,15 +7,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RpcNetworkProcessor.h">
+    <ClInclude Include="aliases.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="aliases.h">
+    <ClInclude Include="RpcServer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerConnection.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientConnection.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RpcNetworkProcessor.cpp">
+    <ClCompile Include="RpcServer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerConnection.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientConnection.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

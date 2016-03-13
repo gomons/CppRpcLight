@@ -2,3 +2,4 @@ BUILD/
 .vs/
 *.sdf
 *.opendb
+*.user

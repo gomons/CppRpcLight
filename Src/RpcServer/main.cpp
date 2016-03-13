@@ -1,5 +1,5 @@
 #include <iostream>
-#include "CppRpcLight/RpcNetworkProcessor.h"
+#include "CppRpcLight/RpcServer.h"
 
 namespace crl = cpp_rpc_light;
 namespace ba = boost::asio;
@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 	try
 	{
 		ba::io_service io_service;
-		crl::RpcNetworkProcessor rpcNetworkProcessor(io_service);
+		crl::RpcServer rpcServer(io_service);
 		std::cout << "Server started!" << std::endl;
 		io_service.run();
 		std::cout << "Server stopped!" << std::endl;
