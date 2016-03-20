@@ -19,6 +19,18 @@
     <ClInclude Include="ClientConnection.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="Pack.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="PackHeader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize_tuple.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="RpcServer.cpp">
