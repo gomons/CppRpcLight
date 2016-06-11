@@ -2,8 +2,10 @@
 
 namespace cpp_rpc_light
 {
-	RpcServer::RpcServer(ba::io_service &io_service)
-		: acceptor_(io_service, ba::ip::tcp::endpoint(ba::ip::tcp::v4(), 12345))
+    //std::map<std::string, std::function<std::string(const std::string&)>> rpc_functions;
+
+	RpcServer::RpcServer(boost::asio::io_service &io_service)
+		: acceptor_(io_service, boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), 12345))
 	{
 		StartAccept();
 	}
@@ -18,10 +20,10 @@ namespace cpp_rpc_light
 		acceptor_.async_accept(socket, accept_handler);
 	}
 
-	void RpcServer::HandleAccept(ServerConnection::Ptr new_connection, const bs::error_code& error)
+	void RpcServer::HandleAccept(ServerConnection::Ptr new_connection, const boost::system::error_code& error)
 	{
 		if (error)
-			throw bs::system_error(error);
+			throw boost::system::system_error(error);
 
 		new_connection->Start();
 		StartAccept();

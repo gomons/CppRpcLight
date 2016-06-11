@@ -7,9 +7,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="aliases.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="RpcServer.h">
       <Filter>src</Filter>
     </ClInclude>
@@ -19,16 +16,19 @@
     <ClInclude Include="ClientConnection.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="Pack.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="utils.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="PackHeader.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="serialize_tuple.h">
+    <ClInclude Include="TupleSerialization.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionCall.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientMacro.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerMacro.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
