@@ -12,7 +12,7 @@ namespace cpp_rpc_light
 
     private:
         void StartAccept();
-        void HandleAccept(ServerConnection::Ptr new_connection, const boost::system::error_code &error);
+        void HandleAccept(std::shared_ptr<ServerConnection> new_connection, const boost::system::error_code &error);
 
         boost::asio::ip::tcp::acceptor acceptor_;
     };

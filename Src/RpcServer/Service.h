@@ -6,5 +6,8 @@
 #include <CppRpcLight/ClientMacro.h>
 #endif
 
-RPC_DEFINE(sum, int, int, int)
+#include <string>
+
+RPC_DEFINE(sum, int, int, int);
+RPC_DEFINE(echo, std::string, std::string);
 

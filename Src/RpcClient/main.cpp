@@ -16,12 +16,12 @@ int main(int argc, char *argv[])
             std::cout << "Client stopped!" << std::endl;
         });
         client_ñonnection.WaitForConnect();
-
-        auto val = sum(client_ñonnection, 10, 25);
-        auto val2 = sum(client_ñonnection, 10, 26);
-        auto val_future = sum_async(client_ñonnection, 10, 26);
-        auto val3 = val_future.get();
-
+        while (true) 
+        {
+            std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+            auto echo_response = echo_async(client_ñonnection, std::string("Ping!"));
+            std::cout << echo_response.get() << std::endl;
+        }
         thread.join();
     }
     catch (const std::exception &e)

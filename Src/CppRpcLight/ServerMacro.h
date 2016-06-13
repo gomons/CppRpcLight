@@ -14,11 +14,11 @@
         typedef return_type ret_type; \
         typedef std::tuple<__VA_ARGS__> arg_type; \
     }; \
-    return_type func_name(__VA_ARGS__);
+    return_type func_name(__VA_ARGS__)
 
 #define RPC_DECLARE(func_name, return_type, ...) \
-    struct func_name##adder { \
-        func_name##adder() { \
+    struct func_name##_adder { \
+        func_name##_adder() { \
             cpp_rpc_light::ServerConnection::GetRpcFunctions()[#func_name] = [] (const std::string &in) { \
                 std::istringstream in_stream(in); \
                 boost::archive::binary_iarchive in_archive(in_stream); \
@@ -31,5 +31,5 @@
                 return buffer_stream.str(); \
             }; \
         } \
-    } func_name##adder_; \
+    } func_name##_adder_; \
     return_type func_name(__VA_ARGS__)
