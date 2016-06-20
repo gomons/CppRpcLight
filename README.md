@@ -43,4 +43,4 @@ std::cout << echo_future.get() << std::endl;
 ```
 
 ## Contact info
-If you have any questions, fill free to cantact me at gomons@gmail.com
+If you have any questions, feel free to contact me at gomons@gmail.com
