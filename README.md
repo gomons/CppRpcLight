@@ -4,11 +4,10 @@ Code example for [CoreHard summer conference 2016](https://corehard.by/2016/06/2
 
 ## How to build example
 1. Install Visual Studio 2015
-2. Download [prebuilt boost](https://1drv.ms/f/s!AhSSCCTw8v3yqz0w7lmvpcowyWR6)
-3. Extract boost archive to ThirdParty directory (`ThirdParty\boost\1.60.0\`)
-4. Open `Src/CppRpcLight.sln` solution in Visual Studio 2015
-5. Build `RpcServer` and `RpcClient` applications
-6. Run `RpcServer` than run `RpcServer`
+1. Extract prebuilt boost library archive in ThirdParty directory (`ThirdParty\boost\1.60.0\`)
+1. Open `Src/CppRpcLight.sln` solution in Visual Studio 2015
+1. Build `RpcServer` and `RpcClient` applications
+1. Run `RpcServer` than run `RpcServer`
 
 ## Code example
 
